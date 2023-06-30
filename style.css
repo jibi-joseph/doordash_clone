@@ -1,0 +1,1207 @@
+@font-face{
+    font-family: 'TT';
+    src: url('assets/fonts/TTNorms-Bold.woff2');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'TT';
+    src: url('assets/fonts/TTNorms-ExtraBold.woff2');
+    font-weight: 800;
+}
+@font-face{
+    font-family: 'TT';
+    src: url('assets/fonts/TTNorms-Medium.woff2');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'TT';
+    src: url('assets/fonts/TTNorms-Regular.woff2');
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing : border-box;
+    overflow-x: hidden;
+    font-family: 'TT';
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+header{
+    background: #f7f7f7;
+    width: 100vw;
+    min-height: 420px;
+}
+/* main header section with sign in and sign up */
+#header-body .sign-in{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 16px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+#header-body .sign-in span{
+    padding: 0 12px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-family: 'TT';
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.04ch;
+    color: #FFF;
+    cursor: pointer;
+}
+#header-body .sign-in .sign-up-container{
+    min-height: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    color:  rgb(73, 73, 73);
+    cursor: pointer;
+    border-radius: 24px;
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+#header-body .sign-in .sign-up-container span{
+    padding : 0 12px;
+    font-size: 18px;
+    font-family: 'TT';
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.04ch;
+    color: rgb(235, 23, 0);
+    display: block;
+}
+/* Header portion with content and background img*/
+#header-body .content{
+    padding: 96px;
+    background: url('assets/main.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#header-body .content .logo-with-name .name{
+    display: none;
+}
+#header-body .content .h1{
+    /* margin: 16px 0; */
+    margin: 16px 0;
+    margin-top: 12px;
+}
+#header-body .content .h1 h1{
+    font-size: 32px;
+    max-width: 334px;
+    font-family: 'TT';
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.04ch;
+    color: #FFF;
+    text-align: center;
+}
+#header-body .search-outer-div{
+    margin-top: 12px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#header-body .search-outer-div .searchbar-container{
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    /* max-width: 315px; */
+    max-width: 275px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#header-body .search-outer-div .search-bar{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    font-family: 'TT';
+    font-weight: 500;
+    /* padding: 4px 16px; */
+    padding: 12px 16px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: rgb(214, 214, 214) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+/* location svg for 768 onwards */
+#header-body .search-outer-div .search-bar .location{
+    display: none;
+}
+#header-body .search-outer-div .search-bar .search{
+    margin-right: 12px;
+    height: 24px;
+    width: 24px;
+}
+#header-body .search-outer-div .search-bar .arrow{
+    height: 24px;
+    width: 24px;
+    margin-right: -4px;
+}
+#header-body .search-outer-div .search-bar .arrow svg{
+    color: #494949;
+}
+#header-body .search-outer-div .search-bar .input{
+    margin-right: 12px;
+    background: transparent;
+    /* display: flex; */
+    /* flex-basis: 100%;
+    flex-shrink: 1;
+    flex-grow: 1; */  
+}
+#header-body .search-outer-div .search-bar .input input{
+    width: 100%;
+    border: 0;
+    color: rgb(96, 96, 96);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    font-family: 'TT';
+    font-weight: 500;
+}
+/* sign-in for save address to be display on 768px onwards*/
+#header-body .content .save-address{
+    display: none;
+}
+/* ------------------------------------------------------------------------------- */
+                    /* Section- 1 - Get the best DoorDash experience */
+#section-one{
+    width: 100%;
+}
+#section-one .section-one-container{
+    max-width: 375px;
+    margin: 0 auto;
+}
+#section-one .section-one-div{
+    margin: 0 16px;
+    margin-right: 20px;
+    padding: 24px 0px;
+}
+#section-one .content-1{
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section-one .content-1 .span-1{
+    width: 160px;
+    margin-right: 16px;
+}
+#section-one .content-1 .span-1 span{
+    font-size: 16px;
+    font-family: 'TT';
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.04ch;
+}
+#section-one .content-1 .span-2{
+    min-height: 40px;
+    width: auto;
+    border-radius: 24px;
+    cursor: pointer;
+    background: rgb(235, 23, 0);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-one .content-1 .span-2 span{
+    display: inline-block;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    font-family:'TT';
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0ch;
+}
+#section-one .content-2{
+    padding: 8px 0;
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+#section-one .content-2 .span-1{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#section-one .content-2 .span-1 span, #section-one .content-2 .span-2 span{
+    font-size: 16px;
+    font-family:'TT';
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.04ch;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+#section-one .content-2 .span-1 .svg{
+    margin-left: 16px;
+}
+#section-one .content-2 .span-2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-left: 15.2px;
+}
+#section-one .content-2 .span-2 .svg{
+    margin-left: 15px;
+}
+/* -------------------------------------------------------------------------------------------- */
+/*Section two - start earning , sign-up your store, try the partner*/
+#section-two{
+    max-width: 768px; 
+}
+#section-two .section-two-container{
+    padding: 8px;
+    margin: 40px 0;
+    margin-top: 35.9px;
+    margin-bottom: 32px;
+}
+/* #section-two .card-container{
+    min-width: 360px;
+    padding: 16px; 
+} */
+#section-two .card{
+    display: flex;
+    min-width: 360px;
+    padding: 16px; 
+}
+#section-two .card .image-section{
+    margin-right: 31px;
+}
+#section-two .card .image-section img{
+    height: 88px;
+    width: 88px;
+}
+#section-two .card .content-section {
+    max-width: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1px;
+    margin-left: 0.5px;
+}
+#section-two .card .content-section h2{
+    font-size: 32px;
+    font-family: 'TT';
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.04ch;
+}
+#section-two .card .content-section h3{
+    font-size: 18px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0ch;
+    margin-top: -1px;
+    padding-right: 28px;
+}
+#section-two .card .content-section .btn{
+    margin-top: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#section-two .card .content-section .btn span{
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 700;
+    letter-spacing: -0.04ch;
+    line-height: 20px;
+    color: rgb(235, 23, 0);
+}
+#section-two .card .content-section .btn svg{
+    margin-left: 7px;
+    width: 10px;
+    height: 10px;
+}
+/* Section - 3 - Get the app and find restaurants*/
+#section-three{
+    width: 100vw;
+}
+#section-three .app .content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding-left: 16px;
+    padding-right: 81.6px;
+    margin-top: 20px;
+}
+#section-three .app{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    margin-bottom: -288px;
+}
+#section-three .app .title{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-family: 'TT';
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.04ch;
+}
+#section-three .app .description{
+    max-width: 100%;
+}
+#section-three .app .description span{
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;;
+    display: block;
+    margin-bottom: 16px;
+}
+/* #section-three .app .btn{ */
+#section-three .btn{
+    width: fit-content;
+    min-width: 32px;
+    border-radius: 24px;
+    background-color: rgb(235, 23, 0);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+/* #section-three .app .btn span{ */
+#section-three .btn span{
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 700;
+    letter-spacing: 0ch;
+    line-height: 16px;
+    display: block;
+}
+#section-three .app .img{
+    margin-left: 64px;
+}
+#section-three .app img{
+    width: 100%;
+    /* height:100%; */
+    /* object-fit: cover; */
+}
+#section-three .restaurants{
+    background-color: rgb(255, 240, 237);
+    padding-top: 336px;
+    padding-bottom: 96px;
+}
+#section-three .restaurants .img{
+    margin-right: 64px;
+}
+#section-three .restaurants .img img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+#section-three .restaurants .content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding-left: 16px;
+    padding-right: 105.6px;
+    margin-top: 21px;
+}
+#section-three .restaurants .title{
+    margin-bottom: 8px;
+    max-width: 100%;
+    font-size: 24px;
+    font-family: 'TT';
+    font-weight: 700;
+    letter-spacing: -0.04ch;
+    line-height: 32px; 
+    display: block;
+}
+#section-three .restaurants .description{
+    margin-bottom: 16px;
+    max-width: 100%;
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    display: block;
+}
+/* ------------------------------------------------------------------------------------------------ */
+                                                 /* Footer */
+footer{
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+}
+#footer{
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+/*part - 1 */
+#footer .part-1{
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+#footer .cities{
+    padding: 32px 0;
+    flex: 1 1 0%;
+}
+#footer .food{
+    padding: 32px 0;
+    flex: 1 1 0%;
+}
+#footer .part-1 h2{
+    font-size: 16px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#footer .part-1 .content{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer .part-1 .top-portion{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    align-items: center;
+}
+#footer .part-1 a{
+    margin-top: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    color: rgb(196, 196, 196);
+}
+#footer .part-1 a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+/*part-2*/
+#footer .part-2{
+    display: flex;
+    flex-direction: column;
+}
+#footer .part-2 .app{
+    flex: 1 1 0%;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .part-2 .app-store{
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    width: fit-content;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+}
+#footer .part-2 .play-store{
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    margin-top: 12px;
+    width: fit-content;
+    opacity: 0.7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#footer .part-2 .app-store:hover{
+    transition: opacity 0.2s ease 0s;
+    opacity: 1;
+}
+#footer .part-2 .play-store:hover{
+    transition: opacity 0.2s ease 0s;
+    opacity: 1;
+}
+#footer .part-2 .content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    gap: 12px;
+}
+#footer .part-2 .middle-portion{
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    align-items: center;
+}
+#footer .part-2 h2{
+    font-size: 16px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+#footer .part-2 a{
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}
+#footer .part-2 a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+/*part - 3*/
+#footer .part-3{
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#footer .part-3 .icons{
+    display: flex;
+    align-items: center;
+}
+#footer .part-3 .icons a{
+    margin-left: 12px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease 0s;
+}
+#footer .part-3 .icons a:nth-child(1){
+    margin-left: 0;
+}
+#footer .part-3 .icons a:hover{
+    opacity: 1;
+}
+#footer .part-3 .select-box{
+    width: 150px;
+    padding: 12px;
+}
+#footer .part-3 .box{
+    /* min-height: 32px; */
+    /* width:100%; */
+    padding: 3.6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'TT';
+    line-height: 20px;
+    letter-spacing: 0ch;
+    box-shadow: rgb(247, 247, 247) 0px 0px 0px 1px inset;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    position: relative;
+}
+#footer .part-3 .box a{
+    margin-right: 8px;
+    height: 24px;
+    width: 24px;
+}
+#footer .part-3 select{
+    font-size: 14px;
+    font-family: 'TT';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    border: 0;
+    background-color: transparent;
+}
+#footer .part-3 .arrow{
+    background-color:  rgb(247, 247, 247);
+    position: absolute;
+    height: 21px;
+    width: 29px;
+    right: 7px;
+}
+#footer .part-3 .bottom-portion{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#footer .part-3 .logo{
+    cursor: pointer;
+    /* width: fit-content;
+    margin-bottom: -5px; */
+    display: flex;
+}
+#footer .part-3 .bottom-portion a{
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 16px;
+    font-size: 12px;
+    font-family: 'TT';
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0ch;
+    color: rgb(196, 196, 196);
+}
+#footer .part-3 .bottom-portion a:hover{
+    color: #FFF;
+    text-decoration: underline;
+    transition: filter 0.2s ease 0s;
+}
+/*
+ ==================================================================================================================================================================================== */
+                                                                    /* 768 px */
+@media screen and (min-width: 768px) {
+    /* sign-in for save address to be display on 768px onwards*/
+    #header-body .content .save-address{
+        display: none;
+        font-size: 16px;
+        font-family: 'TT';
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0ch;
+        margin: 16px;
+        display: block;
+        color: #FFF;
+        text-decoration: underline;
+    }
+    #header-body .search-outer-div .search-bar .location{
+        display: block;
+        margin-right: 12px;
+        height: 24px;
+        width: 24px;
+
+    }
+    #header-body .search-outer-div .search-bar .search{
+        display:none;
+    }
+    #header-body .search-outer-div .searchbar-container{
+        max-width:none;
+    }
+    /*header portion*/
+    #header-body .search-outer-div .search-bar{
+        border-radius: 32px;
+        padding: 12px 16px;
+        padding-left: 12px;
+    }
+    #header-body .search-outer-div .search-bar .input{
+        margin-right: 75px;
+        /* letter-spacing: 0.002px; */
+    }
+    #header-body .search-outer-div .search-bar .input input{
+        transform: translateX(-0.5px);
+    }
+    #header-body .search-outer-div .search-bar .arrow {
+        margin-right: -4px;
+        margin-left: 0px;
+    }
+    #header-body .search-outer-div .search-bar .location{
+        margin-right: 12.1px;
+    }
+    /*Section one need to be hidden*/
+    #section-one{
+        display: none;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+    /*Section two - start earning , sign-up your store, try the partner*/
+    #section-two {
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #section-two .card .image-section img{
+        height: 124px;
+        width: 124px;
+    }
+    #section-two .card:nth-child(1) .content-section h2{
+        white-space: nowrap;
+    }
+    #section-two .card .content-section h3{
+        padding-right: 0px;
+        width: 250px;
+    }
+    #section-two .card .content-section{
+        margin-left: 0;
+    }
+    #section-two  .card{
+        gap: 0 33px;
+    }
+    #section-two .section-two-container{
+        padding-left: 0;
+    }
+    /* Section three - get the app and find restaurants*/
+    #section-three .app .img{
+        /* max-width: 500px; */
+        flex: 2 1 0%;
+        margin-left: 64px;
+        height: 100%;
+    }
+    #section-three .app{
+        flex-flow: row;
+        margin-bottom: -20px;
+    }
+    #section-three .app .content{
+        flex: 1 1 0%;
+        margin-left: 64px;
+        /* margin-bottom: 96px; */
+        margin-bottom: 104px;
+        margin-top: 8px;
+        padding:0;
+    }
+    #section-three .restaurants{
+        padding: 96px 0;
+    }
+    #section-three .restaurants .restauant-container{
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+    #section-three .restaurants .img{
+        /* max-width: 500px; */
+        flex: 2 1 0%;
+        margin: 0;
+        /* margin-left: 1px; */
+        transform: translateY(-15px);
+    }
+    #section-three .restaurants .img img{
+        object-fit: contain;
+        /* object-fit: none; */
+        margin: 0;
+        height: 100%;
+    }
+    #section-three .restaurants .content{
+        flex: 1 1 0%;
+        margin: 0  64px;
+        margin-bottom: 96px;
+        padding: 0;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+                                                      /* Footer */
+    #footer .part-1{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #footer .part-1 .cities, #footer .part-1 .food{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        flex: 1 1 0%;
+    }
+    #footer .part-1 .content{
+        flex-direction: row;
+        gap: 12px;
+    }
+    #footer .part-1 .top-portion{
+        align-items: normal;
+    }
+    #footer .part-1 h2{
+        text-align: left;
+    }
+    /* -------------------------------------------------------------------------------------- */
+                             /* Footer */
+    #footer .part-2 .content {
+        flex-direction: row;
+        gap: 12px;
+        justify-content: space-between;
+    }
+    #footer .part-2 .middle-portion{
+        align-items: normal;
+    }
+    #footer .part-3{
+        flex-direction: row-reverse
+    }
+    #footer .part-3 .bottom-portion{
+        margin-top:0;
+    }
+    #footer .part-3 .select-box{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #footer .part-3 .select-box {
+        margin-top: -4px;
+    }
+    #footer .part-3 .arrow{
+        height: 20px;
+    }
+    #footer .part-3 .icons{
+        margin-top: -7px;
+    }
+}
+/* ======================================================================================================================== */
+                                                                /* 960 */
+@media screen and (min-width: 960px){
+    /*Header-section*/
+    #header-body .content .h1 h1{
+        font-size: 64px;
+        max-width: 668px;
+        line-height: 76px;
+    }
+    #header-body .content .h1{
+        margin-top: 96px;
+        margin-bottom: 16px;
+    }
+    #header-body .content .logo-with-name{
+        display: block;
+    }
+    #header-body .content .logo-with-name{
+        display: flex;
+        align-items: center;
+    }
+    #header-body .content .logo-with-name .name{
+        display: block;
+        margin-left: 12px;
+        margin-bottom: -3px;
+    }
+    #header-body .content .logo-with-name .name svg{
+        width: 155px;
+        height: 18px;
+    }
+    #header-body .content .logo-with-name svg{
+        width: 42px;
+        height: 24px;
+    }
+    #header-body .content{
+        padding-top: 16px;
+        /* padding-bottom: 192px; */
+        padding-bottom: 158px;
+    }
+    #header-body .search-outer-div {
+        margin-top: 16px;
+    }
+    /* Section three - get the app and find restaurants*/
+    #section-three .app{
+        /* margin-bottom: -80px; */
+        margin-bottom: -78px;
+    }
+    #section-three .app .content{
+        /* margin-bottom: 96px; */
+        margin-bottom: 92px;
+        margin-top: 0;
+        margin-left: 64px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #section-three .app .title{
+        /* white-space: pre-line; */
+        padding-right: 127px;
+    }
+    #section-three .btn span{
+        padding: 11px 12px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #section-three .restaurants{
+        padding-top: 144px;
+    }
+    #section-three .restaurants .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #section-three .restaurants .img{
+        transform: translateY(-2px);
+    }
+    /* --------------------------------------------------------------------------------------- */
+                                 /* Footer */
+    #footer .part-1{
+        flex-direction: row;
+    }
+    #footer .part-2{
+        flex-direction: row-reverse;
+    }
+    #footer .part-2 .app{
+        align-items: flex-end;
+    }
+    #footer .part-3 .box{
+        padding-top: 3.7px;
+    }
+    #footer .part-3 .bottom-portion a{
+        margin-top: -1px;
+    }
+    /* #footer .part-3 .bottom-portion a:nth-child(6){
+        margin-top:0;
+    }
+    #footer .part-3 .bottom-portion a:last-child{
+        margin-top: 0;
+    } */
+    #footer .part-3{
+        padding-bottom: 33px;
+    }
+    #footer .part-3 .select-box{
+        margin-bottom: -1px;
+    }
+}
+/* =================================================================================================================================== */
+                                                            /* 1024 */
+@media screen and (min-width: 1024px) {
+    /* Section three - get the app and find restaurants*/
+    #section-three .app .title{
+        padding-right: 150px;
+    }
+    #section-three .app{
+        margin-bottom: -80px;
+    }
+    #section-three .app .content{
+        margin-bottom: 98px;
+    }
+    /*Footer*/
+    #footer .part-3{
+        padding-top: 34px;
+        padding-bottom: 31px;
+    }
+    /* #footer .part-3 .bottom-portion a{
+        margin-top: 1px;
+    }
+    #footer .part-3 .bottom-portion a:nth-child(6){
+        margin-top: 0px;
+    } */
+    #footer .part-3 .select-box{
+        margin-top: -7px;
+    }
+    #footer .part-3 .icons{
+        margin-top: -11px;
+    }
+    #footer .part-3 .bottom-portion .logo{
+        margin-top: -2px;
+        margin-bottom: 2px;
+    }
+}
+/* =============================================================================================================================== */
+                                                             /*1440*/
+@media screen and (min-width: 1440px) {
+    /* Header portion*/
+    #header-body .search-outer-div .search-bar .arrow{
+        background: rgb(235, 23, 0);
+        border-radius: 100%;
+        cursor: pointer;
+        height: 40px; 
+        width: 40px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header-body .search-outer-div .search-bar .arrow svg{
+        color: #FFF;
+        height: 24px;
+        width: 24px;
+    }
+    #header-body .search-outer-div .search-bar .input{
+        /* width: auto; */
+        margin-right: 67px;
+    }
+    #header-body .search-outer-div .search-bar .input input{
+        transform: translateX(-0.5px);
+    }
+    #header-body .search-outer-div .search-bar{
+        padding: 4px 8px;
+        padding-left: 12px;
+    }
+    #header-body .search-outer-div .search-bar .location {
+        margin-right: 12px;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+    /*Section two - start earning , sign-up your store, try the partner*/
+    #section-two{
+        max-width: 1182px;
+        
+    }
+    #section-two .section-two-container{
+        margin-bottom: 96px;
+        padding-right: 0;
+        padding-left: 28px;
+    }
+    #section-two .section-two-div{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+   
+    #section-two .card .image-section img{
+        height: 154px;
+        width: 154px;
+    }
+    #section-two .card{
+        margin: 0 17px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-two .card .content-section h2{
+        text-align: center;
+    }
+    #section-two .card .content-section h3{
+        text-align: center;
+        margin-top: 7px;
+    }
+    #section-two .card .content-section{
+        display: flex;
+        align-items: center;
+    }
+    #section-two .card{
+        min-width: 360px;
+        align-items: flex-start;
+        margin:0;
+    }
+    #section-two .card .content-section .btn span {
+        font-size: 18px;
+        font-family: 'TT';
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.04ch;
+    }
+    #section-two .card .image-section {
+        width: 100%;
+        /* padding-right: 116px; */
+        margin-top: -1px;
+        padding-right: 96px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+    #section-two .section-two-div {
+        align-items: start;
+    }
+    #section-two .card .content-section .btn {
+        margin-left: -3px;
+    }
+    #section-two .card:nth-child(2){
+        padding-left: 23px;
+    }
+    /* -------------------------------------------------------------------------------- */
+    /* Section three - get the app and find restaurants*/
+    #section-three .app{
+        max-width: 1184px;
+        margin: 0 auto;
+        /* margin-bottom: -80px; */
+        margin-bottom: -30px;
+    }
+    #section-three .app .content{
+        margin:0;
+        /* margin-bottom: 96px; */
+        margin-bottom: 100px;
+        flex: 4 1 0%;
+    }
+    #section-three .app .img{
+        flex: 7 1 0%;
+        /* margin-left: 64px; */
+        margin-left: 71px;
+    }
+    #section-three .app .title{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.04ch;
+        margin-bottom: 12px;
+    }
+    #section-three .app .description span{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    #section-three .restaurants .title{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.04ch;
+        margin-bottom: 12px;
+        margin-top: -95px;
+    }
+    #section-three .restaurants{
+        padding-bottom: 96px;
+        padding-top: 100px;
+    }
+    #section-three .restaurants .description {
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+    }
+    #section-three .app .description span {
+        /* width: 28.3vw; */
+        width: 407.7px;
+    }
+    #section-three .restaurants .restauant-container{
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+    #section-three .restaurants .content{
+        flex: 4 1 0%;
+        margin:0;
+        /* margin-left: 64px; */
+        margin-left: 71px;
+        transform: translateX(-7px)
+    }
+    #section-three .restaurants .img{
+        flex: 7 1 0%;
+    }
+    /* -------------------------------------------------------------------------------- */
+                                          /* Footer */
+    #footer{
+        max-width: 1120px;
+    }
+    #footer .part-3{
+        justify-content: space-between;
+    }
+    #footer .part-3{
+        padding-bottom: 31px;
+        padding-top: 39px;
+    }
+    #footer .part-3 .bottom-portion {
+        margin-top: -4px;
+    }
+    #footer .part-3 .box{
+        padding-bottom: 3.8px;
+    }
+    #footer .part-3 .select-box{
+        margin-bottom: 1px;
+    }
+}
+/* ========================================================================================================================== */
+                                                            /*1880*/
+@media screen and (min-width: 1880px){
+    /*Section two - start earning, sign-up your store, try the partner*/
+    #section-two .section-two-div {
+        width: fit-content;
+    }
+   #section-two .card{
+    align-items: normal;
+   }
+   #section-two .card .image-section{
+    text-align: center;
+   }
+   #section-two .section-two-container{
+    padding: 12px;
+    margin: 96px 0 ;
+   }
+    /* -------------------------------------------------------------------------------- */
+    /* Section three - get the app and find restaurants*/
+    #section-three .app{
+        margin-bottom: -26px;
+    }
+    #section-three .app .content{
+        margin-bottom: 105px;
+    }
+}
