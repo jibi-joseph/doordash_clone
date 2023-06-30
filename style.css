@@ -26,8 +26,12 @@ body{
     box-sizing : border-box;
     overflow-x: hidden;
     font-family: 'TT';
+    /* position: fixed; */
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#section-two .card {
+    box-sizing: border-box;
+}
 header{
     background: #f7f7f7;
     width: 100vw;
