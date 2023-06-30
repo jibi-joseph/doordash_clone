@@ -642,13 +642,18 @@ footer{
     letter-spacing: 0ch;
     border: 0;
     background-color: transparent;
+    appearance: none;
+}
+#footer .part-3 select:focus{
+    outline: none;
 }
 #footer .part-3 .arrow{
     background-color:  rgb(247, 247, 247);
     position: absolute;
     height: 21px;
     width: 29px;
-    right: 7px;
+    /* right: 7px; */
+    right: 5px;
 }
 #footer .part-3 .bottom-portion{
     margin-top: 12px;
